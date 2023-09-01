@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+:root{
+    --background: #673AB7;
+    --text:#FFC107;
+}
+
+
+.container{
+    background-color: var(--background);
+    padding: 40px;
+    color: var(--text);
+    height: 100vh;
+    
+}
+header{
+    display: flex;
+    
+}
+.employees{
+    width: 12vw;
+    height: 5vh;
+    margin: 15px 10px;
+}
+.week{
+    margin: 10px;
+}
+input{
+    width: 11vw;
+    height: 5vh;
+    padding: 1px;
+    border: 0;
+    border-radius: 6px;
+    margin: 3px;
+}
+.tablehead input{
+    background-color: var(--text);
+}
+button{
+    width: 6vw;
+    height: 5vh;
+    background-color: var(--text);
+    border: none;
+    border-radius: 5px;
+}
+.tablefooter{
+    padding: 20px;
+    margin-left: 28vw;
+}
+.tablefooter input{
+    padding: 0.3vw;
+    width: 10vw;
+}
+@media screen and (max-width : 390px) {
+    input{
+        width: 16vw;
+        height: 5vh;
+    }
+    button{
+        width: 20vw;
+
+    }
+    .container{
+        height: 180vh;
+    }
+    .tablefooter {
+        margin-left: 0vw;
+    }
+    .tablefooter input{
+        width: 16vw;
+    }
+    .employees{
+        width: 16vw;
+        height: 8vw;
+        margin: 10px 2px;
+    }
+    .week{
+        margin: 6px;
+    }
+}
+@media screen and (max-width: 500px) {
+    input{
+        width: 17vw;
+        height: 5vh;
+    }
+    button{
+        width: 20vw;
+
+    }
+    .container{
+        height: 180vh;
+    }
+    .tablefooter {
+        margin-left: 0vw;
+    }
+    .tablefooter input{
+        width: 16vw;
+    }
+}
+@media screen and (max-width: 375px) {
+    input{
+    width: 15vw;
+    height:5vh ;
+    }
+}
+@media (max-width: 300px){
+    input{
+        width: 20vw;
+        height: 8vw;
+        
+    }
+    .employees{
+        width: 25vw;
+        height: 10vw;
+        margin: 10px 0px;
+    }
+    .container{
+        height: 200vh;
+    }
+}

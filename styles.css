@@ -103,7 +103,7 @@ button{
         padding: 1rem;
     }
     .tablefooter {
-        margin-left: 0vw;
+        margin-left: -5vw;
     }
     .tablefooter input{
         width: 15vw;

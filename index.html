@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Work hours</title>
+</head>
+<body>
+    <div class="container">
+        <h1>TimeSheet</h1>
+        <header>
+        
+        
+          <div class="person-name">
+            <select name = "select" class="employees" onchange="myfunction()" id="myid">
+                <option value="0">Employees</option>
+                <option value="1">Rujutha</option>
+                <option value="2">Anagha</option>
+                <option value="3">Rahul</option>
+                <option value="4">Jubin</option>
+                <option value="5">Piyush</option>
+                <option value="6">Others</option>
+            </select>
+            <input
+            style="display: none"
+            type="text"
+            name=""
+            id="others-text"
+            placeholder="Name"
+          />
+
+          </div>
+          <div class="week">
+            <input type="date" placeholder="startdate" >
+            <input type="date" placeholder="enddate">
+
+          </div>
+        </header>
+        <section class="tablehead">
+            <div >
+            <input type="text" value="Days" disabled>
+            <input type="text" value="Start time" disabled>
+            <input type="text" value="Start break" disabled>
+            <input type="text" value="End break" disabled>
+            <input type="text" value="End time" disabled>
+            <input type="text" value="Total hours" disabled>
+        </div>
+    </section>
+    <section class="tablebody">
+        <div class="tr">
+           <!--<form>
+                <th>
+                   <input type="text" value="Monday" disabled>
+                </th>
+                <td> <input type="time" id="start-hours" ></td>
+                <td><input type="time" id="start-break" ></td>
+                <td> <input type="time" id="end-break" ></td>
+                <td><input type="time" id="end-hours" ></td>
+                <td><input   value="00:00" disabled></td>
+                <td><button type="submit" value="Add">Add</button></td>
+            </form> -->    
+        </div>
+
+        <div class="tr"></div>
+        <div class="tr"></div>
+        <div class="tr"></div>
+        <div class="tr"></div>
+        <div class="tr"></div>
+        <div class="tr"></div>
+    </section>
+        <section class="tablefooter">
+        <div >
+            <input type="text" value="Total hours/week" disabled class="dis" >
+            <input type="text" id="totalworkedhours"  disabled>
+            <input type="text" value="SIN hrs" disabled class="dis"  >
+            <input type="number" placeholder="Enter SIN hrs/week" id="sinhrs">
+            <button id="submit" type="submit">Submit</button>
+        </div>
+        <div>
+            <input type="text" value="Cash Hrs" disabled class="dis" >
+            <input type="number"  id="TotalHrsOnCash" disabled >
+            <input type="text" value="/hr Pay" id="totalHrsOnCash" disabled class="dis" >
+            <input type="number" id ="perhr" placeholder="Enter hourly pay" >
+            <button id="sub" type="submit">Submit</button>
+            <input type="text" value="Total Cash Pay" disabled class="dis" >
+            <input type="number"  id="totalPayOnCash" disabled>
+        </div>
+
+        </section>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

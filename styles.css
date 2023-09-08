@@ -1,0 +1,219 @@
+*{
+    
+    margin: 0;
+    
+}
+h1{
+    text-align: center;
+    margin: 2rem;
+    font-size: 2rem;
+}
+
+:root{
+    --background: #673AB7;
+    --text:#FFC107;
+}
+*:disabled{
+    background-color: white;
+    opacity: 0.85;
+    color: black;
+}
+.dis{
+    background-color: unset;
+    background-color: #FFC107;
+}
+.tablebody,header,.tablehead{
+    padding: 0.5rem;
+    justify-content: center;
+    align-items: center;
+
+}
+.container{
+    background-color: var(--background);
+   
+    color: var(--text);
+    height: 100vh;
+    margin: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+header{
+    display: flex;
+    padding: 0.5rem;
+    
+}
+#others-text{
+    margin: 0.8rem;
+    padding: 0.1rem;
+}
+.person-name{
+    height: 10vh;
+    display: flex;
+   
+}
+.employees{
+    width: 11vw;
+    height: 5vh;
+    margin: 15px 10px;
+}
+.week{
+    margin: 10px;
+}
+input{
+    width: 11vw;
+    height: 5vh;
+    padding: 1px;
+    border: 0;
+    border-radius: 6px;
+    margin: 3px;
+}
+
+.tablehead input{
+    background-color: var(--text);
+}
+button{
+    width: 6vw;
+    height: 5vh;
+    background-color: var(--text);
+    border: none;
+    border-radius: 5px;
+}
+
+.tablefooter{
+    margin-left: 3rem;
+   
+    margin-top: 2rem;
+   
+}
+.tablefooter input{
+    padding: 0.3vw;
+    width: 10vw;
+}
+@media screen and (max-width : 390px) {
+    input{
+        width: 14vw;
+        height: 4vh;
+    }
+    button{
+        width: 20vw;
+
+    }
+    .container{
+        height: 280vh;
+        padding: 1rem;
+    }
+    .tablefooter {
+        margin-left: 0vw;
+    }
+    .tablefooter input{
+        width: 15vw;
+    }
+    .employees{
+        width: 15vw;
+        height: 10vw;
+        margin: 5px 2px;
+    }
+    .week{
+        margin: 6px;
+    }
+}
+@media screen and (max-width: 500px) {
+    input{
+        width: 17vw;
+        height: 5vh;
+    }
+    button{
+        width: 20vw;
+
+    }
+    .container{
+        height: 250vh;
+        margin: 1rem;
+        padding: 1rem;
+    }
+    .tr{
+        margin: 1rem 0;
+    }
+    .tablefooter {
+        margin-left: -5vw;
+    }
+    .tablefooter input{
+        width: 16vw;
+    }
+    .employees{
+        width: 16vw;
+        height: 8vw;
+        margin: 10px 2px;
+    }
+    .week{
+        margin: 6px;
+    }
+}
+
+@media screen and (max-width: 300px){
+    input{
+        width: 20vw;
+        height: 5vh;
+        
+    }
+    .employees{
+        width: 25vw;
+        height: 5vh;
+        margin: 10px 0px;
+    }
+    .container{
+        height: 450vh;
+        padding: 3rem;
+        
+    }
+}
+@media screen and (max-width: 900px) {
+    
+    input{
+        width: 15vw;
+        height: 5vh;
+    }
+    button{
+        width: 20vw;
+
+    }
+    .container{
+        height: 300vh;
+        margin: 1rem;
+        padding: 2rem;
+    }
+    .tr{
+        margin: 1rem 0;
+    }
+    .tablefooter {
+        margin-left: 0.2rem;
+    }
+    .tablefooter input{
+        width: 16vw;
+    }
+    .employees{
+        width: 17vw;
+        height: 5vh;
+        margin: 3vw  -0.8vw;
+    }
+    .week{
+        margin: 1rem;
+    }
+    #others-text{
+        padding: 0;
+        margin: 0.5rem;
+    }
+}
+@media  screen and (max-width: 1200px) {
+    .container{
+        height: 300vh;
+        padding: 3rem;
+
+    }
+    .tablefooter {
+        margin: 5rem;
+        padding: 2rem;
+       
+    }
+    
+}
